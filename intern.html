@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website UI Redesign</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#2563eb;
+    color:white;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 10%;
+    background:white;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#555;
+    margin-bottom:20px;
+}
+
+.btn{
+    background:#2563eb;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:50px 10%;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#2563eb;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#222;
+    color:white;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:10px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>UI Redesign</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Modern Website Redesign</h1>
+    <p>Improving usability, accessibility, and user experience with a clean responsive interface.</p>
+    <a href="#" class="btn">Get Started</a>
+</section>
+
+<section class="features">
+    <div class="card">
+        <h3>Heuristic Evaluation</h3>
+        <p>Identify usability issues and improve user interaction.</p>
+    </div>
+
+    <div class="card">
+        <h3>Mood Boards</h3>
+        <p>Create visual styles, color palettes, and typography guides.</p>
+    </div>
+
+    <div class="card">
+        <h3>High-Fidelity Mockups</h3>
+        <p>Design modern and visually appealing interfaces.</p>
+    </div>
+
+    <div class="card">
+        <h3>Responsive Layout</h3>
+        <p>Optimized for desktop, tablet, and mobile devices.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Website UI Redesign Project</p>
+</footer>
+
+</body>
+</html>
